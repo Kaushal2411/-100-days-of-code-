@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct Student {
+    char name[20];
+    int roll;
+    int marks;
+};
+
+int main() {
+    struct Student s;
+    // Example input
+    // Name: Asha, Roll: 101, Marks: 90
+    scanf("%s %d %d", s.name, &s.roll, &s.marks);
+    printf("Name: %s | Roll: %d | Marks: %d\n", s.name, s.roll, s.marks);
+    return 0;
+}

@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int n=12345, c=0;
+    do{c++; n/=10;}while(n);
+    printf("%d",c);
+    return 0;
+}

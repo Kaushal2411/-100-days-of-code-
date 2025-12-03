@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    FILE *f = fopen("text.txt", "r");
+    char ch;
+    int vowels = 0, consonants = 0;
+    while ((ch = fgetc(f)) != EOF) {
+        if (isalpha(ch)) {
+            char lower = tolower(ch);
+            if (lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u')
+                vowels++;
+            else
+                consonants++;
+        }
+    }
+    fclose(f);
+    printf("Vowels: %d\nConsonants: %d\n", vowels, consonants);
+    return 0;
+}

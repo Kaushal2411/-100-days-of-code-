@@ -1,0 +1,6 @@
+#include <stdio.h>
+enum Day {SUN,MON,TUE,WED,THU,FRI,SAT};
+int main() {
+    for(enum Day d=SUN;d<=SAT;d++) printf("%d ",d);
+    return 0;
+}

@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int a=18, b=27, t;
+    while(b) {t=b;b=a%b;a=t;}
+    printf("%d",a);
+    return 0;
+}

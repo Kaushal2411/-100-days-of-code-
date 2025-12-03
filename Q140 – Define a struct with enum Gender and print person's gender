@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+struct Person {
+    enum Gender { MALE, FEMALE } gender;
+};
+
+int main() {
+    struct Person p;
+
+    // Input format: Gender=MALE or Gender=FEMALE
+    char input[20];
+    scanf("%s", input);
+
+    if (input[7] == 'M')           // Gender=MALE
+        p.gender = MALE;
+    else                           // Gender=FEMALE
+        p.gender = FEMALE;
+
+    if (p.gender == MALE)
+        printf("Male");
+    else
+        printf("Female");
+
+    return 0;
+}

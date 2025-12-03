@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+struct Date {
+    int dd, mm, yy;
+};
+
+struct Employee {
+    char name[20];
+    int id;
+    struct Date join;
+};
+
+int main() {
+    struct Employee e;
+
+    scanf("%s %d %d %d %d", e.name, &e.id, &e.join.dd, &e.join.mm, &e.join.yy);
+
+    printf("Name: %s | ID: %d | Joining Date: %02d-%02d-%04d\n",
+           e.name, e.id, e.join.dd, e.join.mm, e.join.yy);
+
+    return 0;
+}

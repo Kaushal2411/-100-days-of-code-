@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    FILE *fp = fopen("data.txt","r");
+    char buff[100];
+    while(fgets(buff,100,fp)) printf("%s",buff);
+    fclose(fp);
+    return 0;
+}

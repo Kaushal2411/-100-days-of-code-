@@ -1,0 +1,10 @@
+#include <stdio.h>
+enum Color { RED, YELLOW, GREEN };
+
+const char *color_names[] = {"RED", "YELLOW", "GREEN"};
+
+int main() {
+    for(int i = RED; i <= GREEN; i++)
+        printf("%s=%d\n", color_names[i], i);
+    return 0;
+}

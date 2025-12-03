@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int a=15, b=20, l=a*b;
+    while(b) {int t=b;b=a%b;a=t;}
+    printf("%d",l/a);
+    return 0;
+}
